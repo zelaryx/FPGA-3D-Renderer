@@ -1,0 +1,2002 @@
+!SESSION 2023-12-07 05:52:56.908 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2023-12-07 05:53:26.304
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:29.663
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:29.663
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:29.672
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:29.870
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:29.870
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:29.871
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:29.871
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:29.871
+!MESSAGE XSCT Command: [setws C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:29.891
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2022.2/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:29.905
+!MESSAGE XSCT command with result: [setws C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-12-07 05:53:37.167
+!MESSAGE Opening file dialog using preferences. Current path: C:\Xilinx\Vitis\2022.2\data\embeddedsw\lib\fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:43.058
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:43.412
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:43.439
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:43.442
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa], Result: [null, {"device": "7s50",
+"family": "spartan7",
+"timestamp": "Thu Dec  7 05:38:07 2023",
+"vivado_version": "2022.2",
+"part": "xc7s50csga324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:43.445
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:43.449
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa], Result: [null, {"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"hdmi_text_controller_0": {"hier_name": "hdmi_text_controller_0",
+"type": "hdmi_text_controller",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"mig_7series_0": {"hier_name": "mig_7series_0",
+"type": "mig_7series",
+"version": "4.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"rst_mig_7series_0_83M": {"hier_name": "rst_mig_7series_0_83M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:53.177
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:53.184
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_12": {"name": "freertos10_xilinx",
+"version": "1.12",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.4.6",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_12",
+},
+"standalone_v8_0": {"name": "standalone",
+"version": "8.0",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/bsp/standalone_v8_0",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:53.188
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa microblaze_0 C_DATA_SIZE], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:53.191
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa microblaze_0 C_DATA_SIZE], Result: [null, 32]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:54.674
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:54.710
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"ddr_self_refresh": {"userdefname": "DDR self refresh",
+"description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/ddr_self_refresh",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program for baremetal environment.",
+"supp_proc": "microblaze psu_cortexa53 ps7_cortexa9 psv_cortexa72 psu_cortexr5 psv_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"empty_application": {"userdefname": "Empty Application(C)",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_cortexa72 psv_cortexr5 psv_cortexa72 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
+"supp_os": "standalone xilkernel freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72 psxl_cortexr52 psx_cortexr52 psx_cortexa78 psxl_cortexa78",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10 or IPv6 address FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_tcp_perf_client": {"userdefname": "FreeRTOS lwIP TCP Perf Client",
+"description": "The FreeRTOS LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address whenipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_tcp_perf_server": {"userdefname": "FreeRTOS lwIP TCP Perf Server",
+"description": "The FreeRTOS LwIP TCP Server application is used for creating TCP server using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection info and also display interim and average TCP statistics for data transfer. This application handles only 1 client connection at a time.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_udp_perf_client": {"userdefname": "FreeRTOS lwIP UDP Perf Client",
+"description": "The FreeRTOS LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_udp_perf_server": {"userdefname": "FreeRTOS lwIP UDP Perf Server",
+"description": "The FreeRTOS LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_cortexa72 psv_cortexr5 psv_cortexa72 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
+"supp_os": "standalone xilkernel",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"imgsel": {"userdefname": "Image Selector",
+"description": "ImgSel for Zynq Ultrascale+ MPSoC. The Image Selector  selects the image based on configuration parameters",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/imgsel",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"img_rcvry": {"userdefname": "Image Recovery",
+"description": "Image Recovery tool which writes  user selected images on the board.",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/img_rcvry",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal AMP Demo",
+"description": "Libmetal AMP Application",
+"supp_proc": "psu_cortexr5 psv_cortexr5",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10 or IPv6 FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_tcp_perf_client": {"userdefname": "lwIP TCP Perf Client",
+"description": "The LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_tcp_perf_server": {"userdefname": "lwIP TCP Perf Server",
+"description": "The LwIP TCP Perf Server application is used for creating TCP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IPv4 address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection information with interim and average TCP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_udp_perf_client": {"userdefname": "lwIP UDP Perf Client",
+"description": "The LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_udp_perf_server": {"userdefname": "lwIP UDP Perf Server",
+"description": "The LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexa72 psv_cortexr5 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze psv_cortexa72 psv_cortexr5 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
+"supp_os": "standalone xilkernel",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/peripheral_tests",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"versal_plm": {"userdefname": "versal PLM",
+"description": "Platform Loader and Manager for versal.",
+"supp_proc": "psu_pmc psv_pmc psxl_pmc psx_pmc",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/versal_plm",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"versal_psmfw": {"userdefname": "versal PSM Firmware",
+"description": "Processing System Management Unit Firmware for versal.",
+"supp_proc": "psu_psm psv_psm psxl_psm psx_psm",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/versal_psmfw",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72",
+"supp_os": "linux",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72",
+"supp_os": "linux",
+"path": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:54.766
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:54.776
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:54.779
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:54.787
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:57.195
+!MESSAGE XSCT Command: [platform create -name {top_level} -hw {C:\Users\shivg\Desktop\ece385\final_project\top_level.xsa} -out {C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace};platform write], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:57.574
+!MESSAGE XSCT command with result: [platform create -name {top_level} -hw {C:\Users\shivg\Desktop\ece385\final_project\top_level.xsa} -out {C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace};platform write], Result: [null, Successfully saved  the platform at "C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/platform.spr"]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:57.580
+!MESSAGE XSCT Command: [domain create -name {standalone_microblaze_0} -display-name {standalone_microblaze_0} -os {standalone} -proc {microblaze_0} -runtime {cpp} -arch {32-bit} -support-app {hello_world}], Thread: ModalContext
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2023-12-07 05:53:57.598
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.part.IntroPart.dispose(IntroPart.java:99)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.dispose(ViewIntroAdapterPart.java:153)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:260)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:417)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:200)
+	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:176)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:491)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1406)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1537)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1496)
+	at org.eclipse.ui.internal.WorkbenchPage.hideView(WorkbenchPage.java:2609)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.closeIntro(WorkbenchIntroManager.java:98)
+	at com.xilinx.sdx.ui.utils.SWTUtils.closeWelcomeView(SWTUtils.java:529)
+	at com.xilinx.sdx.scw.project.ScwProjectCreationHandler$1.run(ScwProjectCreationHandler.java:71)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3897)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3527)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1033)
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.execute(NewProjectCreationHandler.java:105)
+	at com.xilinx.sdx.npw.NewProjectWizard._createApplicationProject(NewProjectWizard.java:214)
+	at com.xilinx.sdx.npw.NewProjectWizard.performFinish(NewProjectWizard.java:161)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:832)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:472)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:413)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.000
+!MESSAGE XSCT command with result: [domain create -name {standalone_microblaze_0} -display-name {standalone_microblaze_0} -os {standalone} -proc {microblaze_0} -runtime {cpp} -arch {32-bit} -support-app {hello_world}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.004
+!MESSAGE XSCT Command: [platform write], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.025
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/platform.spr"]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.035
+!MESSAGE XSCT Command: [platform active {top_level}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.037
+!MESSAGE XSCT command with result: [platform active {top_level}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.038
+!MESSAGE XSCT Command: [platform generate -quick], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.084
+!MESSAGE XSCT command with result: [platform generate -quick], Result: [null, Successfully generated platform at "C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace"]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.434
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.787
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.788
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.792
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Result: [null, {"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"hdmi_text_controller_0": {"hier_name": "hdmi_text_controller_0",
+"type": "hdmi_text_controller",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"mig_7series_0": {"hier_name": "mig_7series_0",
+"type": "mig_7series",
+"version": "4.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"rst_mig_7series_0_83M": {"hier_name": "rst_mig_7series_0_83M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.809
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.814
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.815
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:53:59.818
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.507
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_REORDER_INSTR], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.510
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_REORDER_INSTR], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.511
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_ENDIANNESS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.526
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.527
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_BARREL], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.529
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_BARREL], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.530
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_PCMP_INSTR], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.532
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_PCMP_INSTR], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.543
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_DIV], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.545
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.546
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_FPU], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.548
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.549
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_HW_MUL], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.551
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_USE_HW_MUL], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.574
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_AREA_OPTIMIZED], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.577
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_AREA_OPTIMIZED], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.591
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.598
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_12": {"name": "freertos10_xilinx",
+"version": "1.12",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.4.6",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_12",
+},
+"standalone_v8_0": {"name": "standalone",
+"version": "8.0",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/lib/bsp/standalone_v8_0",
+},
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.599
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.604
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.605
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.608
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Result: [null, {}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.609
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.620
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0], Result: [null, axi_uartlite_0 hdmi_text_controller_0 microblaze_0_axi_intc mig_7series_0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.621
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.625
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Result: [null, {"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.7",
+},
+"hdmi_text_controller_0": {"name": "hdmi_text_controller",
+"ver": "1.0",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.15",
+},
+"mig_7series_0": {"name": "mig_7series",
+"ver": "2.2",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.16",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.626
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.655
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Result: [null, {"axi_uartlite_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"uartlite_v3_7": {"name": "uartlite",
+"version": "3.7",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"hdmi_text_controller_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"hdmi_text_controller_v1_0": {"name": "hdmi_text_controller",
+"version": "1.0",
+"repo": "C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/drivers/hdmi_text_controller_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"mdm_1": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"uartlite_v3_7": {"name": "uartlite",
+"version": "3.7",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0": {"version": "11.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"cpu_v2_16": {"name": "cpu",
+"version": "2.16",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_16",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_intc": {"version": "4.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"intc_v3_15": {"name": "intc",
+"version": "3.15",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/intc_v3_15",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+"mig_7series_0": {"version": "4.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+"mig_7series_v2_2": {"name": "mig_7series",
+"version": "2.2",
+"repo": "C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/mig_7series_v2_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"rst_mig_7series_0_83M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "{C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0} {C:/Xilinx/Vitis/2022.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1}",
+},
+},
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.657
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.660
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.661
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.668
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Result: [null, {}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.763
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.766
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.767
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.779
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.780
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa -sw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss -app hello_world -processor microblaze_0 -os standalone -dir C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/src], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.876
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa -sw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss -app hello_world -processor microblaze_0 -os standalone -dir C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/src], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.928
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {C:\Users\shivg\Desktop\ece385\final_project\vitis_workspace\Final_Proj_workspace\Final_Proj\_ide\bitstream}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.960
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {C:\Users\shivg\Desktop\ece385\final_project\vitis_workspace\Final_Proj_workspace\Final_Proj\_ide\bitstream}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.961
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:00.965
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Result: [null, {"device": "7s50",
+"family": "spartan7",
+"timestamp": "Thu Dec  7 05:38:07 2023",
+"vivado_version": "2022.2",
+"part": "xc7s50csga324-1",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:01.009
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:01.012
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-12-07 05:54:01.040
+!MESSAGE Generating MD5 hash for file: C:\Users\shivg\Desktop\ece385\final_project\vitis_workspace\Final_Proj_workspace\top_level\export\top_level\sw\top_level\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:01.508
+!MESSAGE XSCT Command: [::hsi::utils::closehw C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:01.512
+!MESSAGE XSCT command with result: [::hsi::utils::closehw C:/Users/shivg/AppData/Local/Temp/hwspec_top_level16032806637524395622/top_level.xsa], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-07 05:54:01.657
+!MESSAGE Indexed 'Final_Proj_system' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-07 05:54:02.200
+!MESSAGE Indexed 'Final_Proj' (2 sources, 52 headers) in 0.54 sec: 1,538 declarations; 2,230 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-07 05:54:05.148
+!MESSAGE Indexed 'top_level' (155 sources, 177 headers) in 2.94 sec: 4,448 declarations; 16,451 references; 96 unresolved inclusions; 42 syntax errors; 337 unresolved names (1.6%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-12-07 05:54:07.055
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-12-07 05:54:07.056
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-12-07 05:54:07.059
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:13.646
+!MESSAGE XSCT Command: [platform read {C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/platform.spr}], Thread: Worker-4: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:14.017
+!MESSAGE XSCT command with result: [platform read {C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/platform.spr}], Result: [null, ]. Thread: Worker-4: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:16.342
+!MESSAGE XSCT Command: [platform config -updatehw {C:/Users/shivg/Desktop/ece385/final_project/top_level.xsa}], Thread: Worker-5: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:54:17.122
+!MESSAGE XSCT command with result: [platform config -updatehw {C:/Users/shivg/Desktop/ece385/final_project/top_level.xsa}], Result: [null, ]. Thread: Worker-5: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:06.704
+!MESSAGE XSCT Command: [::hsi::utils::lg_init C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/sw/top_level/standalone_microblaze_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:06.708
+!MESSAGE XSCT command with result: [::hsi::utils::lg_init C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/sw/top_level/standalone_microblaze_0/system.mss], Result: [null, lg1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:06.710
+!MESSAGE XSCT Command: [::hsi::utils::lg_get_memories -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:06.711
+!MESSAGE XSCT command with result: [::hsi::utils::lg_get_memories -json], Result: [null, {"mig_7series_0_memaddr": {"base_addr": "0x0",
+"size": "0x8000000",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:06.714
+!MESSAGE XSCT Command: [::hsi::utils::lg_get_sections -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:06.718
+!MESSAGE XSCT command with result: [::hsi::utils::lg_get_sections -json], Result: [null, {"code_sections": ".text:0x0::mig_7series_0_memaddr",
+"data_sections": ".rodata:0x0::mig_7series_0_memaddr .sdata2:0x0::mig_7series_0_memaddr .sbss2:0x0::mig_7series_0_memaddr .data:0x0::mig_7series_0_memaddr .sdata:0x0::mig_7series_0_memaddr .sbss:0x0::mig_7series_0_memaddr .bss:0x0::mig_7series_0_memaddr",
+"stack_section": "stack:0x400::mig_7series_0_memaddr",
+"heap_section": "heap:0x800::mig_7series_0_memaddr",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.710
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .text -mem mig_7series_0_memaddr], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.712
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .text -mem mig_7series_0_memaddr], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.712
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .rodata -mem mig_7series_0_memaddr], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.714
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .rodata -mem mig_7series_0_memaddr], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.715
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sdata2 -mem mig_7series_0_memaddr], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.716
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sdata2 -mem mig_7series_0_memaddr], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.717
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sbss2 -mem mig_7series_0_memaddr], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.718
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sbss2 -mem mig_7series_0_memaddr], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.719
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .data -mem mig_7series_0_memaddr], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.721
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .data -mem mig_7series_0_memaddr], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.722
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sdata -mem mig_7series_0_memaddr], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.724
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sdata -mem mig_7series_0_memaddr], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.725
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sbss -mem mig_7series_0_memaddr], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.726
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sbss -mem mig_7series_0_memaddr], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.727
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .bss -mem mig_7series_0_memaddr], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.729
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .bss -mem mig_7series_0_memaddr], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.730
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec heap -mem mig_7series_0_memaddr -size 1048576], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.732
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec heap -mem mig_7series_0_memaddr -size 1048576], Result: [null, 1048576]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.733
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec stack -mem mig_7series_0_memaddr -size 1048576], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.735
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec stack -mem mig_7series_0_memaddr -size 1048576], Result: [null, 1048576]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.736
+!MESSAGE XSCT Command: [::hsi::utils::lg_generate C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/src/lscript.ld], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.740
+!MESSAGE XSCT command with result: [::hsi::utils::lg_generate C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/src/lscript.ld], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.891
+!MESSAGE XSCT Command: [::hsi::utils::lg_delete], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:16.892
+!MESSAGE XSCT command with result: [::hsi::utils::lg_delete], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:47.473
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/sw/top_level/standalone_microblaze_0/system.mss ], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:47.477
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/sw/top_level/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:47.477
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/sw/top_level/standalone_microblaze_0/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:47.480
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/sw/top_level/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-12-07 05:55:47.481
+!MESSAGE Generating MD5 hash for file: C:\Users\shivg\Desktop\ece385\final_project\vitis_workspace\Final_Proj_workspace\top_level\export\top_level\sw\top_level\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:47.483
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/sw/top_level/standalone_microblaze_0/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:55:47.485
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/sw/top_level/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:24.510
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_DEBUG_ENABLED], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:24.513
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:24.514
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_DEBUG_PROFILE_SIZE], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:24.516
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_DEBUG_PROFILE_SIZE], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:24.516
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_FREQ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:24.518
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_FREQ], Result: [null, 83333333]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:25.202
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:25.205
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:25.205
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:25.209
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Result: [null, {"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"hdmi_text_controller_0": {"hier_name": "hdmi_text_controller_0",
+"type": "hdmi_text_controller",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"mig_7series_0": {"hier_name": "mig_7series_0",
+"type": "mig_7series",
+"version": "4.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"rst_mig_7series_0_83M": {"hier_name": "rst_mig_7series_0_83M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:25.211
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:25.213
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Result: [null, {"device": "7s50",
+"family": "spartan7",
+"timestamp": "Thu Dec  7 05:38:07 2023",
+"vivado_version": "2022.2",
+"part": "xc7s50csga324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.043
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.050
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Result: [null, {}]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.051
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.067
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0], Result: [null, {"axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_DATA": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033280,
+},
+"TX_FIFO": {"description": "Transmit data FIFO",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TX_DATA": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033284,
+},
+"CTRL_REG": {"description": "UART Lite control register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RST_TXFIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO
+Writing a 1 to this bit position clears the transmit FIFO
+  0 - Do nothing
+  1 - Clear the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RST_RXFIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO
+Writing a 1 to this bit position clears the receive FIFO
+  0 - Do nothing
+  1 - Clear the receive FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Enable_Intr": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable interrupt for the AXI UART Lite
+  0 - Disable interrupt signal
+  1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033292,
+},
+"STAT_REG": {"description": "UART Lite status register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has data.
+  0 - Receive FIFO is empty
+  1 - Receive FIFO has data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full.
+  0 - Receive FIFO is not full
+  1 - Receive FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty.
+  0 - Transmit FIFO is not empty
+  1 - Transmit FIFO is empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full.
+  0 - Transmit FIFO is not full
+  1 - Transmit FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Intr_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupts is enabled.
+  0 - Interrupt is disabled
+  1 - Interrupt is enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Overrun_Error": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.      0 - No overrun error has occurred      1 - Overrun error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Frame_Error": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO. This bit is cleared when the status register is read.      0 - No frame error has occurred   1 - Frame error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Parity_Error": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0. The received character is written into the receive FIFO. This bit is cleared when the status register is read.      0 - No parity error has occurred      1 - Parity error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033288,
+},
+},
+"hdmi_text_controller_0": {},
+"microblaze_0_axi_intc": {"ISR": {"description": "Interrupt Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Status Register.
+For each bit up to number of periperhal interrupts:
+  R - Reads active interrupt signal.
+  W - No effect after MER HIE bit has been set, otherwise writes active interrupt signal.
+For remaining bits defined by number of software interrupts:
+  R - Reads software interrupt value.
+  W - Writes software interrupt value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"IPR": {"description": "Interrupt Pending Register",
+"address_offset": "0x4",
+"access": "read-only",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Pending Register.
+For each bit:
+  R - Reads logical AND of bits in ISR and IER.
+  W - No effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"IER": {"description": "Interrupt Enable Register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Enable Register.
+For each bit:
+  R - Reads interrupt enable value.
+  W - Writes interrupt enable value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"IAR": {"description": "Interrupt Acknowledge Register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Acknowledge Register.
+For each bit:
+  W - Acknowledge interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"SIE": {"description": "Set Interrupt Enables",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Set Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 enables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616208,
+},
+"CIE": {"description": "Clear Interrupt Enables",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Clear Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 disables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616212,
+},
+"IVR": {"description": "Interrupt Vector Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"IVN": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Interrupt Vector Number.
+  R - Reads ordinal of highest priority, enabled, active interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616216,
+},
+"MER": {"description": "Master Enable Register",
+"address_offset": "0x1C",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"ME": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master IRQ Enable.
+  0 - All interrupts disabled.
+  1 - All interrupts can be enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"HIE": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Hardware Interrupt Enable.
+  0 - HW interrupts disabled.
+  1 - HW interrupts enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616220,
+},
+"IMR": {"description": "Interrupt Mode Register",
+"address_offset": "0x20",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Mode Register.
+For each bit:
+  R - Reads interrupt mode.
+  W - Sets interrupt mode, where 0 is normal mode and 1 is fast mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616224,
+},
+"IVAR[0]": {"description": "Interrupt Vector Address Register 0",
+"address_offset": "0x100",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 0 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616448,
+},
+},
+"mig_7series_0": {},
+}]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.069
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.083
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0], Result: [null, {"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40600000",
+"high": "0x4060FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_axi_intc_s_axi": {"name": "microblaze_0_axi_intc",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "s_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"hdmi_text_controller_0_AXI": {"name": "hdmi_text_controller_0",
+"base": "0x44A00000",
+"high": "0x44A0FFFF",
+"size": "65536",
+"slaveintf": "AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"mig_7series_0_S_AXI_memaddr": {"name": "mig_7series_0",
+"base": "0x00000000",
+"high": "0x07FFFFFF",
+"size": "134217728",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "memaddr",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.084
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.098
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa], Result: [null, {"microblaze_0": {"bscan": "2",
+"index": "0",
+},
+}]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.100
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa mdm_1], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.103
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa mdm_1], Result: [null, {}]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.104
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa mdm_1], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.106
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa mdm_1], Result: [null, {"microblaze_0": {},
+}]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.106
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa mdm_1], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.108
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa mdm_1], Result: [null, microblaze_0]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.109
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.111
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.112
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.130
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:36.132
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2023-12-07 05:56:38.359
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2023-12-07 05:56:38.359
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.413
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.414
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.676
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 8874292302AEA]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.677
+!MESSAGE XSCT Command: [version -server], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.680
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.680
+!MESSAGE XSCT Command: [version], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.681
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.684
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.689
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 8874292302AEA]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.690
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.704
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.705
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.711
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 8874292302AEA]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.711
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.724
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.724
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.730
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 8874292302AEA]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.731
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.744
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.744
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.749
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 8874292302AEA]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.750
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.763
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.764
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.769
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 8874292302AEA]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.770
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.783
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.783
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 8874292302AEA" && level == 0}], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.796
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 8874292302AEA" && level == 0}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.797
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.798
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.799
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.802
+!MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa microblaze_0], Result: [null, {"Clk": "83333333",
+"Dbg_Clk": "",
+}]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.822
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.827
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 8874292302AEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.828
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.841
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.843
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.845
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.845
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.850
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 8874292302AEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.850
+!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.851
+!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.851
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.856
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 8874292302AEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.857
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.870
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.871
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.873
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn1-0362f093-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.876
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.905
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:38.906
+!MESSAGE XSCT Command: [fpga -file C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/_ide/bitstream/top_level.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.166
+!MESSAGE XSCT command with result: [fpga -file C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/_ide/bitstream/top_level.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.187
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.206
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.207
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa -regs], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.231
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa -regs], Result: [null, top_level_1]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.231
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.233
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.234
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.248
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.249
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.252
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:40.252
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:43.261
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:43.262
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:43.287
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:43.288
+!MESSAGE XSCT Command: [dow C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/Debug/Final_Proj.elf], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:43.321
+!MESSAGE XSCT command with result: [dow C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/Debug/Final_Proj.elf], Result: [null, ]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:43.341
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:43.353
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:43.354
+!MESSAGE XSCT Command: [con], Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:43.361
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-2: Launching Debugger_Final_Proj-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:43.372
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-172
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-07 05:56:43.374
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-172

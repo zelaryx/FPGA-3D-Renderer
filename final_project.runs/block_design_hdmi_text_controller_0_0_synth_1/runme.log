@@ -1,0 +1,2030 @@
+
+*** Running vivado
+    with args -log block_design_hdmi_text_controller_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_design_hdmi_text_controller_0_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source block_design_hdmi_text_controller_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 374.488 ; gain = 62.867
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: block_design_hdmi_text_controller_0_0
+Command: synth_design -top block_design_hdmi_text_controller_0_0 -part xc7s50csga324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 39232
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'num_trianlges', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:61]
+INFO: [Synth 8-11241] undeclared symbol 't_r', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:103]
+CRITICAL WARNING: [Synth 8-9339] data object 'triangle_calculations_start' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+INFO: [Synth 8-6826] previous declaration of 'triangle_calculations_start' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:94]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'triangle_calculations_start' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+CRITICAL WARNING: [Synth 8-9339] data object 'z_start' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+INFO: [Synth 8-6826] previous declaration of 'z_start' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:94]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'z_start' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+CRITICAL WARNING: [Synth 8-9339] data object 'z_done' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+INFO: [Synth 8-6826] previous declaration of 'z_done' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:94]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'z_done' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+CRITICAL WARNING: [Synth 8-9339] data object 'scanline_start' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+INFO: [Synth 8-6826] previous declaration of 'scanline_start' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:94]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'scanline_start' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+CRITICAL WARNING: [Synth 8-9339] data object 'scanline_done' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+INFO: [Synth 8-6826] previous declaration of 'scanline_done' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:94]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'scanline_done' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+CRITICAL WARNING: [Synth 8-9339] data object 'calculations_done' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:410]
+INFO: [Synth 8-6826] previous declaration of 'calculations_done' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:95]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'calculations_done' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:410]
+WARNING: [Synth 8-6901] identifier 'scanline_state' is used before its declaration [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:234]
+WARNING: [Synth 8-6901] identifier 'calculate' is used before its declaration [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:234]
+INFO: [Synth 8-11241] undeclared symbol 'reset_ah', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:94]
+INFO: [Synth 8-11241] undeclared symbol 'clk_25MHz', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:97]
+INFO: [Synth 8-11241] undeclared symbol 'clk_125MHz', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:98]
+INFO: [Synth 8-11241] undeclared symbol 'locked', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:101]
+INFO: [Synth 8-11241] undeclared symbol 'hsync', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:109]
+INFO: [Synth 8-11241] undeclared symbol 'vsync', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:110]
+INFO: [Synth 8-11241] undeclared symbol 'vde', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:111]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN0' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:145]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN1' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:146]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN2' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:147]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN3' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:148]
+
+*** Running vivado
+    with args -log block_design_hdmi_text_controller_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_design_hdmi_text_controller_0_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source block_design_hdmi_text_controller_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 375.930 ; gain = 63.859
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: block_design_hdmi_text_controller_0_0
+Command: synth_design -top block_design_hdmi_text_controller_0_0 -part xc7s50csga324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5836
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'num_trianlges', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:61]
+INFO: [Synth 8-11241] undeclared symbol 't_r', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:103]
+CRITICAL WARNING: [Synth 8-9339] data object 'triangle_calculations_start' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+INFO: [Synth 8-6826] previous declaration of 'triangle_calculations_start' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:94]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'triangle_calculations_start' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+CRITICAL WARNING: [Synth 8-9339] data object 'z_start' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+INFO: [Synth 8-6826] previous declaration of 'z_start' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:94]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'z_start' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+CRITICAL WARNING: [Synth 8-9339] data object 'z_done' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+INFO: [Synth 8-6826] previous declaration of 'z_done' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:94]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'z_done' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+CRITICAL WARNING: [Synth 8-9339] data object 'scanline_start' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+INFO: [Synth 8-6826] previous declaration of 'scanline_start' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:94]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'scanline_start' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+CRITICAL WARNING: [Synth 8-9339] data object 'scanline_done' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+INFO: [Synth 8-6826] previous declaration of 'scanline_done' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:94]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'scanline_done' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:147]
+CRITICAL WARNING: [Synth 8-9339] data object 'calculations_done' is already declared [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:410]
+INFO: [Synth 8-6826] previous declaration of 'calculations_done' is from here [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:95]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'calculations_done' is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:410]
+WARNING: [Synth 8-6901] identifier 'scanline_state' is used before its declaration [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:234]
+WARNING: [Synth 8-6901] identifier 'calculate' is used before its declaration [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:234]
+INFO: [Synth 8-11241] undeclared symbol 'reset_ah', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:94]
+INFO: [Synth 8-11241] undeclared symbol 'clk_25MHz', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:97]
+INFO: [Synth 8-11241] undeclared symbol 'clk_125MHz', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:98]
+INFO: [Synth 8-11241] undeclared symbol 'locked', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:101]
+INFO: [Synth 8-11241] undeclared symbol 'hsync', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:109]
+INFO: [Synth 8-11241] undeclared symbol 'vsync', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:110]
+INFO: [Synth 8-11241] undeclared symbol 'vde', assumed default net type 'wire' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:111]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN0' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:145]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN1' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:146]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN2' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:147]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN3' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:148]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1193.277 ; gain = 407.582
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'block_design_hdmi_text_controller_0_0' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/synth/block_design_hdmi_text_controller_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0_AXI' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0_AXI.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0_AXI' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0_AXI.sv:6]
+WARNING: [Synth 8-7071] port 'drawX' of module 'hdmi_text_controller_v1_0_AXI' is unconnected for instance 'hdmi_text_controller_v1_0_AXI_inst' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:64]
+WARNING: [Synth 8-7071] port 'drawY' of module 'hdmi_text_controller_v1_0_AXI' is unconnected for instance 'hdmi_text_controller_v1_0_AXI_inst' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:64]
+WARNING: [Synth 8-7071] port 'clk_100' of module 'hdmi_text_controller_v1_0_AXI' is unconnected for instance 'hdmi_text_controller_v1_0_AXI_inst' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:64]
+WARNING: [Synth 8-7023] instance 'hdmi_text_controller_v1_0_AXI_inst' of module 'hdmi_text_controller_v1_0_AXI' has 24 connections declared, but only 21 given [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:64]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:71]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.v:71]
+WARNING: [Synth 8-7071] port 'clk_out4' of module 'clk_wiz_0' is unconnected for instance 'clk_wiz0' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:96]
+WARNING: [Synth 8-7023] instance 'clk_wiz0' of module 'clk_wiz_0' has 7 connections declared, but only 6 given [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:96]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/VGA_controller.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/VGA_controller.sv:26]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:106]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:106]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/synth/hdmi_tx_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_v1_0' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'srldelay' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/srldelay.v:70]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
+INFO: [Synth 8-6155] done synthesizing module 'srldelay' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/srldelay.v:70]
+INFO: [Synth 8-6157] synthesizing module 'encode' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'encode__parameterized0' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized0' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'encode__parameterized1' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized1' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'serdes_10_to_1' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/serdes_10_to_1.v:43]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'serdes_10_to_1' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/serdes_10_to_1.v:43]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_v1_0' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/synth/hdmi_tx_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:77]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_0.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 1 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 64 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 64 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 36300 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 36300 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_RSTB bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 64 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 64 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 36300 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 36300 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 72 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     40.776004 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_5' declared at 'c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_0/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_5' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:249]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:77]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'blk_mem_gen_0' is unconnected for instance 'ram0' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:150]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'blk_mem_gen_0' is unconnected for instance 'ram0' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:150]
+WARNING: [Synth 8-7023] instance 'ram0' of module 'blk_mem_gen_0' has 13 connections declared, but only 11 given [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:150]
+INFO: [Synth 8-6157] synthesizing module 'ColorPicker' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/ColorPicker.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'ColorPicker' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/ColorPicker.sv:3]
+WARNING: [Synth 8-689] width (11) of port connection 'to_DrawX' does not match port width (10) of module 'ColorPicker' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:165]
+WARNING: [Synth 8-689] width (11) of port connection 'to_DrawY' does not match port width (10) of module 'ColorPicker' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:165]
+WARNING: [Synth 8-689] width (11) of port connection 'z_buffer' does not match port width (8) of module 'ColorPicker' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:166]
+INFO: [Synth 8-6157] synthesizing module 'triangle_pipeline' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:1]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:75]
+INFO: [Synth 8-6157] synthesizing module 'trig' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/trig.sv:4]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/trig.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'sine_table' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/sine_table.sv:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:67]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: blk_mem_gen_1.mif - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_1.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 64 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 64 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 6 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 64 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 64 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 6 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.7096 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_5' declared at 'c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_0/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_5' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:67]
+INFO: [Synth 8-6155] done synthesizing module 'sine_table' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/sine_table.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'trig' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/trig.sv:4]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:149]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:184]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:213]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:67]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: blk_mem_gen_2.mif - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_2.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 256 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 256 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 256 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 256 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.7096 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_5' declared at 'c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_0/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_5' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:67]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:331]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'triangle_pipeline' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:1]
+WARNING: [Synth 8-689] width (11) of port connection 'x' does not match port width (10) of module 'triangle_pipeline' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:179]
+WARNING: [Synth 8-689] width (11) of port connection 'y' does not match port width (10) of module 'triangle_pipeline' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:179]
+WARNING: [Synth 8-689] width (11) of port connection 'z' does not match port width (10) of module 'triangle_pipeline' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:179]
+INFO: [Synth 8-6157] synthesizing module 'ColorMapper' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/ColorMapper.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ColorMapper' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/ColorMapper.sv:23]
+WARNING: [Synth 8-689] width (2) of port connection 'blue' does not match port width (3) of module 'ColorMapper' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:189]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'block_design_hdmi_text_controller_0_0' (0#1) [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/synth/block_design_hdmi_text_controller_0_0.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0_AXI.sv:165]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0_AXI.sv:250]
+WARNING: [Synth 8-6014] Unused sequential element palette_reg was removed. 
+WARNING: [Synth 8-3848] Net axi_rdata in module/entity hdmi_text_controller_v1_0_AXI does not have driver. [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0_AXI.sv:91]
+WARNING: [Synth 8-6014] Unused sequential element hdmi_ctl1_reg was removed.  [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:148]
+WARNING: [Synth 8-7137] Register mem_addr_reg in module ColorPicker has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/ColorPicker.sv:40]
+WARNING: [Synth 8-6014] Unused sequential element triangle_request_reg was removed.  [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:103]
+WARNING: [Synth 8-3848] Net num_triangles in module/entity triangle_pipeline does not have driver. [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'colorf_reg' and it is trimmed from '64' to '56' bits. [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/ColorMapper.sv:42]
+WARNING: [Synth 8-3848] Net dinb in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/hdmi_text_controller_v1_0.sv:146]
+WARNING: [Synth 8-7129] Port reset_ah in module ColorMapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_color[63] in module ColorMapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_color[62] in module ColorMapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_color[61] in module ColorMapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_color[60] in module ColorMapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_color[59] in module ColorMapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_color[58] in module ColorMapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_color[57] in module ColorMapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_color[56] in module ColorMapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[15] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[14] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[13] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[12] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[11] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[10] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[9] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[8] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[7] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[6] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[5] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[4] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[3] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[2] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[1] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[0] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[7] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[6] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[5] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[4] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[3] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[2] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[1] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[0] in module blk_mem_output_block__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[35] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[34] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[33] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[32] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[31] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[30] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[29] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[28] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[27] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[26] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[25] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[24] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[23] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[22] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[21] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[20] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[19] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[18] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[17] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[16] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[15] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[14] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[13] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[12] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[11] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[10] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[9] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[8] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[7] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[6] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[5] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[4] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[3] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[2] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[1] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[0] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENB in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEB in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[8] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[7] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[6] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[5] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[4] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[3] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[2] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[1] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[0] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[35] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[34] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[33] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[32] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[31] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[30] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[29] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[28] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[27] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[26] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[25] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:47 ; elapsed = 00:02:49 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:48 ; elapsed = 00:02:50 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:48 ; elapsed = 00:02:50 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.713 . Memory (MB): peak = 1789.938 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst/clk_wiz0/inst'
+Finished Parsing XDC File [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst/clk_wiz0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ip/block_design_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/block_design_hdmi_text_controller_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/block_design_hdmi_text_controller_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.runs/block_design_hdmi_text_controller_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.runs/block_design_hdmi_text_controller_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.runs/block_design_hdmi_text_controller_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/block_design_hdmi_text_controller_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/block_design_hdmi_text_controller_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1789.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.635 . Memory (MB): peak = 1789.938 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:03:32 ; elapsed = 00:03:34 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:32 ; elapsed = 00:03:34 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz0/inst. (constraint file  C:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.runs/block_design_hdmi_text_controller_0_0_synth_1/dont_touch.xdc, line 29).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vga_to_hdmi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ram0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/triangle/trig0/sine_table_inst/sine_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/triangle/z_bram. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:32 ; elapsed = 00:03:34 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:46 ; elapsed = 00:03:49 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 5     
+	   3 Input   64 Bit       Adders := 13    
+	   4 Input   64 Bit       Adders := 3     
+	   3 Input   34 Bit       Adders := 12    
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 6     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 8     
+	   5 Input    5 Bit       Adders := 6     
+	   4 Input    5 Bit       Adders := 3     
+	   8 Input    4 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 186   
++---Registers : 
+	               96 Bit    Registers := 2     
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 8     
+	               10 Bit    Registers := 7     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 8     
+	                5 Bit    Registers := 149   
+	                4 Bit    Registers := 15    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 620   
++---Multipliers : 
+	               8x64  Multipliers := 3     
+	              32x64  Multipliers := 16    
+	              16x64  Multipliers := 6     
+	              10x64  Multipliers := 2     
+	              34x34  Multipliers := 6     
+	              32x40  Multipliers := 6     
+	              25x32  Multipliers := 2     
+	              16x32  Multipliers := 4     
+	               8x33  Multipliers := 1     
+	               8x32  Multipliers := 4     
++---Muxes : 
+	  16 Input   96 Bit        Muxes := 1     
+	   2 Input   96 Bit        Muxes := 1     
+	   4 Input   64 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 17    
+	   3 Input   16 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 6     
+	  22 Input   10 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 12    
+	   4 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 13    
+	   2 Input    4 Bit        Muxes := 7     
+	   2 Input    3 Bit        Muxes := 11    
+	   3 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 126   
+	  15 Input    1 Bit        Muxes := 3     
+	   8 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 9     
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP cy_cr0, operation Mode is: A*B.
+DSP Report: operator cy_cr0 is absorbed into DSP cy_cr0.
+DSP Report: Generating DSP sy_sp0, operation Mode is: A*B.
+DSP Report: operator sy_sp0 is absorbed into DSP sy_sp0.
+DSP Report: Generating DSP intermediate28, operation Mode is: A*B.
+DSP Report: operator intermediate28 is absorbed into DSP intermediate28.
+DSP Report: Generating DSP intermediate63, operation Mode is: A2*B.
+DSP Report: register intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: Generating DSP intermediate63, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex3_3D_reg[1] is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: Generating DSP intermediate63, operation Mode is: A*B2.
+DSP Report: register intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: Generating DSP intermediate63, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex3_3D_reg[1] is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: Generating DSP intermediate63, operation Mode is: A*B2.
+DSP Report: register intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: Generating DSP intermediate63, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex3_3D_reg[1] is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: Generating DSP cy_sr0, operation Mode is: A*B.
+DSP Report: operator cy_sr0 is absorbed into DSP cy_sr0.
+DSP Report: Generating DSP intermediate27, operation Mode is: A*B.
+DSP Report: operator intermediate27 is absorbed into DSP intermediate27.
+DSP Report: Generating DSP intermediate62, operation Mode is: A2*B.
+DSP Report: register intermediate62 is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: Generating DSP intermediate62, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex3_3D_reg[2] is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: Generating DSP intermediate62, operation Mode is: A*B2.
+DSP Report: register intermediate62 is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: Generating DSP intermediate62, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex3_3D_reg[2] is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: Generating DSP intermediate62, operation Mode is: A*B2.
+DSP Report: register intermediate62 is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: Generating DSP intermediate62, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex3_3D_reg[2] is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: operator intermediate62 is absorbed into DSP intermediate62.
+DSP Report: Generating DSP sy_cp0, operation Mode is: A*B.
+DSP Report: operator sy_cp0 is absorbed into DSP sy_cp0.
+DSP Report: Generating DSP intermediate25, operation Mode is: A*(B:0x64).
+DSP Report: operator intermediate25 is absorbed into DSP intermediate25.
+DSP Report: Generating DSP intermediate63, operation Mode is: A2*B.
+DSP Report: register intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: Generating DSP intermediate63, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex3_3D_reg[0] is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: operator intermediate63 is absorbed into DSP intermediate63.
+DSP Report: Generating DSP intermediate60, operation Mode is: A2*B.
+DSP Report: register inverse_z_3_reg is absorbed into DSP intermediate60.
+DSP Report: operator intermediate60 is absorbed into DSP intermediate60.
+DSP Report: operator intermediate60 is absorbed into DSP intermediate60.
+DSP Report: Generating DSP intermediate60, operation Mode is: A*B2.
+DSP Report: register inverse_z_3_reg is absorbed into DSP intermediate60.
+DSP Report: operator intermediate60 is absorbed into DSP intermediate60.
+DSP Report: operator intermediate60 is absorbed into DSP intermediate60.
+DSP Report: Generating DSP intermediate60, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register inverse_z_3_reg is absorbed into DSP intermediate60.
+DSP Report: operator intermediate60 is absorbed into DSP intermediate60.
+DSP Report: operator intermediate60 is absorbed into DSP intermediate60.
+DSP Report: Generating DSP intermediate43, operation Mode is: A2*B.
+DSP Report: register intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: Generating DSP intermediate43, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex2_3D_reg[1] is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: Generating DSP intermediate43, operation Mode is: A*B2.
+DSP Report: register intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: Generating DSP intermediate43, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex2_3D_reg[1] is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: Generating DSP intermediate43, operation Mode is: A*B2.
+DSP Report: register intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: Generating DSP intermediate43, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex2_3D_reg[1] is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: Generating DSP intermediate42, operation Mode is: A2*B.
+DSP Report: register intermediate42 is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: Generating DSP intermediate42, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex2_3D_reg[2] is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: Generating DSP intermediate42, operation Mode is: A*B2.
+DSP Report: register intermediate42 is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: Generating DSP intermediate42, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex2_3D_reg[2] is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: Generating DSP intermediate42, operation Mode is: A*B2.
+DSP Report: register intermediate42 is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: Generating DSP intermediate42, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex2_3D_reg[2] is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: operator intermediate42 is absorbed into DSP intermediate42.
+DSP Report: Generating DSP intermediate43, operation Mode is: A2*B.
+DSP Report: register intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: Generating DSP intermediate43, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex2_3D_reg[0] is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: operator intermediate43 is absorbed into DSP intermediate43.
+DSP Report: Generating DSP intermediate40, operation Mode is: A2*B.
+DSP Report: register inverse_z_2_reg is absorbed into DSP intermediate40.
+DSP Report: operator intermediate40 is absorbed into DSP intermediate40.
+DSP Report: operator intermediate40 is absorbed into DSP intermediate40.
+DSP Report: Generating DSP intermediate40, operation Mode is: A*B2.
+DSP Report: register inverse_z_2_reg is absorbed into DSP intermediate40.
+DSP Report: operator intermediate40 is absorbed into DSP intermediate40.
+DSP Report: operator intermediate40 is absorbed into DSP intermediate40.
+DSP Report: Generating DSP intermediate40, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register inverse_z_2_reg is absorbed into DSP intermediate40.
+DSP Report: operator intermediate40 is absorbed into DSP intermediate40.
+DSP Report: operator intermediate40 is absorbed into DSP intermediate40.
+DSP Report: Generating DSP intermediate23, operation Mode is: A*B2.
+DSP Report: register vertex1_3D_reg[0] is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: Generating DSP intermediate22, operation Mode is: A2*B.
+DSP Report: register intermediate22 is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: Generating DSP intermediate22, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex1_3D_reg[2] is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: Generating DSP intermediate22, operation Mode is: A*B2.
+DSP Report: register intermediate22 is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: Generating DSP intermediate22, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex1_3D_reg[2] is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: Generating DSP intermediate22, operation Mode is: A*B2.
+DSP Report: register intermediate22 is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: Generating DSP intermediate22, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex1_3D_reg[2] is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: operator intermediate22 is absorbed into DSP intermediate22.
+DSP Report: Generating DSP intermediate23, operation Mode is: A2*B.
+DSP Report: register intermediate23 is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: Generating DSP intermediate23, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex1_3D_reg[1] is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: Generating DSP intermediate23, operation Mode is: A*B2.
+DSP Report: register intermediate23 is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: Generating DSP intermediate23, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex1_3D_reg[1] is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: Generating DSP intermediate23, operation Mode is: A*B2.
+DSP Report: register intermediate23 is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: Generating DSP intermediate23, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex1_3D_reg[1] is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: operator intermediate23 is absorbed into DSP intermediate23.
+DSP Report: Generating DSP intermediate21, operation Mode is: PCIN+A:B+C.
+DSP Report: operator intermediate21 is absorbed into DSP intermediate21.
+DSP Report: Generating DSP intermediate20, operation Mode is: A2*B.
+DSP Report: register inverse_z_1_reg is absorbed into DSP intermediate20.
+DSP Report: operator intermediate20 is absorbed into DSP intermediate20.
+DSP Report: operator intermediate20 is absorbed into DSP intermediate20.
+DSP Report: Generating DSP intermediate20, operation Mode is: A*B2.
+DSP Report: register inverse_z_1_reg is absorbed into DSP intermediate20.
+DSP Report: operator intermediate20 is absorbed into DSP intermediate20.
+DSP Report: operator intermediate20 is absorbed into DSP intermediate20.
+DSP Report: Generating DSP intermediate20, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register inverse_z_1_reg is absorbed into DSP intermediate20.
+DSP Report: operator intermediate20 is absorbed into DSP intermediate20.
+DSP Report: operator intermediate20 is absorbed into DSP intermediate20.
+DSP Report: Generating DSP sy_cr0, operation Mode is: A*B.
+DSP Report: operator sy_cr0 is absorbed into DSP sy_cr0.
+DSP Report: Generating DSP cy_sp0, operation Mode is: A*B.
+DSP Report: operator cy_sp0 is absorbed into DSP cy_sp0.
+DSP Report: Generating DSP cy_sp_sr0, operation Mode is: A*B.
+DSP Report: operator cy_sp_sr0 is absorbed into DSP cy_sp_sr0.
+DSP Report: Generating DSP intermediate53, operation Mode is: A2*B.
+DSP Report: register intermediate53 is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: Generating DSP intermediate53, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex3_3D_reg[1] is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: Generating DSP intermediate53, operation Mode is: A*B2.
+DSP Report: register intermediate53 is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: Generating DSP intermediate53, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex3_3D_reg[1] is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: Generating DSP sy_sr0, operation Mode is: A*B.
+DSP Report: operator sy_sr0 is absorbed into DSP sy_sr0.
+DSP Report: Generating DSP intermediate17, operation Mode is: A*B.
+DSP Report: operator intermediate17 is absorbed into DSP intermediate17.
+DSP Report: Generating DSP intermediate52, operation Mode is: A2*B.
+DSP Report: register intermediate52 is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: Generating DSP intermediate52, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex3_3D_reg[2] is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: Generating DSP intermediate52, operation Mode is: A*B2.
+DSP Report: register intermediate52 is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: Generating DSP intermediate52, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex3_3D_reg[2] is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: Generating DSP intermediate52, operation Mode is: A*B2.
+DSP Report: register intermediate52 is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: Generating DSP intermediate52, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex3_3D_reg[2] is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: operator intermediate52 is absorbed into DSP intermediate52.
+DSP Report: Generating DSP cy_cp0, operation Mode is: A*B.
+DSP Report: operator cy_cp0 is absorbed into DSP cy_cp0.
+DSP Report: Generating DSP intermediate15, operation Mode is: A*(B:0x64).
+DSP Report: operator intermediate15 is absorbed into DSP intermediate15.
+DSP Report: Generating DSP intermediate53, operation Mode is: A2*B.
+DSP Report: register intermediate53 is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: Generating DSP intermediate53, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex3_3D_reg[0] is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: operator intermediate53 is absorbed into DSP intermediate53.
+DSP Report: Generating DSP intermediate50, operation Mode is: A2*B.
+DSP Report: register inverse_z_3_reg is absorbed into DSP intermediate50.
+DSP Report: operator intermediate50 is absorbed into DSP intermediate50.
+DSP Report: operator intermediate50 is absorbed into DSP intermediate50.
+DSP Report: Generating DSP intermediate50, operation Mode is: A*B2.
+DSP Report: register inverse_z_3_reg is absorbed into DSP intermediate50.
+DSP Report: operator intermediate50 is absorbed into DSP intermediate50.
+DSP Report: operator intermediate50 is absorbed into DSP intermediate50.
+DSP Report: Generating DSP intermediate50, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register inverse_z_3_reg is absorbed into DSP intermediate50.
+DSP Report: operator intermediate50 is absorbed into DSP intermediate50.
+DSP Report: operator intermediate50 is absorbed into DSP intermediate50.
+DSP Report: Generating DSP intermediate33, operation Mode is: A2*B.
+DSP Report: register intermediate33 is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: Generating DSP intermediate33, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex2_3D_reg[1] is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: Generating DSP intermediate33, operation Mode is: A*B2.
+DSP Report: register intermediate33 is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: Generating DSP intermediate33, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex2_3D_reg[1] is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: Generating DSP intermediate32, operation Mode is: A2*B.
+DSP Report: register intermediate32 is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: Generating DSP intermediate32, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex2_3D_reg[2] is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: Generating DSP intermediate32, operation Mode is: A*B2.
+DSP Report: register intermediate32 is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: Generating DSP intermediate32, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex2_3D_reg[2] is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: Generating DSP intermediate32, operation Mode is: A*B2.
+DSP Report: register intermediate32 is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: Generating DSP intermediate32, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex2_3D_reg[2] is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: operator intermediate32 is absorbed into DSP intermediate32.
+DSP Report: Generating DSP intermediate33, operation Mode is: A2*B.
+DSP Report: register intermediate33 is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: Generating DSP intermediate33, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex2_3D_reg[0] is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: operator intermediate33 is absorbed into DSP intermediate33.
+DSP Report: Generating DSP intermediate30, operation Mode is: A2*B.
+DSP Report: register inverse_z_2_reg is absorbed into DSP intermediate30.
+DSP Report: operator intermediate30 is absorbed into DSP intermediate30.
+DSP Report: operator intermediate30 is absorbed into DSP intermediate30.
+DSP Report: Generating DSP intermediate30, operation Mode is: A*B2.
+DSP Report: register inverse_z_2_reg is absorbed into DSP intermediate30.
+DSP Report: operator intermediate30 is absorbed into DSP intermediate30.
+DSP Report: operator intermediate30 is absorbed into DSP intermediate30.
+DSP Report: Generating DSP intermediate30, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register inverse_z_2_reg is absorbed into DSP intermediate30.
+DSP Report: operator intermediate30 is absorbed into DSP intermediate30.
+DSP Report: operator intermediate30 is absorbed into DSP intermediate30.
+DSP Report: Generating DSP intermediate13, operation Mode is: A*B2.
+DSP Report: register vertex1_3D_reg[0] is absorbed into DSP intermediate13.
+DSP Report: operator intermediate13 is absorbed into DSP intermediate13.
+DSP Report: Generating DSP intermediate12, operation Mode is: A2*B.
+DSP Report: register intermediate12 is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: Generating DSP intermediate12, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex1_3D_reg[2] is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: Generating DSP intermediate12, operation Mode is: A*B2.
+DSP Report: register intermediate12 is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: Generating DSP intermediate12, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex1_3D_reg[2] is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: Generating DSP intermediate12, operation Mode is: A*B2.
+DSP Report: register intermediate12 is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: Generating DSP intermediate12, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex1_3D_reg[2] is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: operator intermediate12 is absorbed into DSP intermediate12.
+DSP Report: Generating DSP intermediate13, operation Mode is: A2*B.
+DSP Report: register intermediate13 is absorbed into DSP intermediate13.
+DSP Report: operator intermediate13 is absorbed into DSP intermediate13.
+DSP Report: operator intermediate13 is absorbed into DSP intermediate13.
+DSP Report: Generating DSP intermediate13, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex1_3D_reg[1] is absorbed into DSP intermediate13.
+DSP Report: operator intermediate13 is absorbed into DSP intermediate13.
+DSP Report: operator intermediate13 is absorbed into DSP intermediate13.
+DSP Report: Generating DSP intermediate13, operation Mode is: A*B2.
+DSP Report: register intermediate13 is absorbed into DSP intermediate13.
+DSP Report: operator intermediate13 is absorbed into DSP intermediate13.
+DSP Report: operator intermediate13 is absorbed into DSP intermediate13.
+DSP Report: Generating DSP intermediate13, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex1_3D_reg[1] is absorbed into DSP intermediate13.
+DSP Report: operator intermediate13 is absorbed into DSP intermediate13.
+DSP Report: operator intermediate13 is absorbed into DSP intermediate13.
+DSP Report: Generating DSP intermediate11, operation Mode is: PCIN+A:B+C.
+DSP Report: operator intermediate11 is absorbed into DSP intermediate11.
+DSP Report: Generating DSP intermediate10, operation Mode is: A2*B.
+DSP Report: register inverse_z_1_reg is absorbed into DSP intermediate10.
+DSP Report: operator intermediate10 is absorbed into DSP intermediate10.
+DSP Report: operator intermediate10 is absorbed into DSP intermediate10.
+DSP Report: Generating DSP intermediate10, operation Mode is: A*B2.
+DSP Report: register inverse_z_1_reg is absorbed into DSP intermediate10.
+DSP Report: operator intermediate10 is absorbed into DSP intermediate10.
+DSP Report: operator intermediate10 is absorbed into DSP intermediate10.
+DSP Report: Generating DSP intermediate10, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register inverse_z_1_reg is absorbed into DSP intermediate10.
+DSP Report: operator intermediate10 is absorbed into DSP intermediate10.
+DSP Report: operator intermediate10 is absorbed into DSP intermediate10.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red4, operation Mode is: A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP green3, operation Mode is: A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is: PCIN+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is: A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is: PCIN+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is: PCIN+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is: A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is: PCIN+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP cp_sr0, operation Mode is: A*B.
+DSP Report: operator cp_sr0 is absorbed into DSP cp_sr0.
+DSP Report: Generating DSP z_17, operation Mode is: A*(B:0x64).
+DSP Report: operator z_17 is absorbed into DSP z_17.
+DSP Report: Generating DSP z_36, operation Mode is: A2*B.
+DSP Report: register z_36 is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: Generating DSP z_36, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex3_3D_reg[1] is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: Generating DSP z_36, operation Mode is: A*B2.
+DSP Report: register z_36 is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: Generating DSP z_36, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex3_3D_reg[1] is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: Generating DSP cp_cr0, operation Mode is: A*B.
+DSP Report: operator cp_cr0 is absorbed into DSP cp_cr0.
+DSP Report: Generating DSP z_16, operation Mode is: A*(B:0x64).
+DSP Report: operator z_16 is absorbed into DSP z_16.
+DSP Report: Generating DSP z_35, operation Mode is: A2*B.
+DSP Report: register z_35 is absorbed into DSP z_35.
+DSP Report: operator z_35 is absorbed into DSP z_35.
+DSP Report: operator z_35 is absorbed into DSP z_35.
+DSP Report: Generating DSP z_35, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex3_3D_reg[2] is absorbed into DSP z_35.
+DSP Report: operator z_35 is absorbed into DSP z_35.
+DSP Report: operator z_35 is absorbed into DSP z_35.
+DSP Report: Generating DSP z_35, operation Mode is: A*B2.
+DSP Report: register z_35 is absorbed into DSP z_35.
+DSP Report: operator z_35 is absorbed into DSP z_35.
+DSP Report: operator z_35 is absorbed into DSP z_35.
+DSP Report: Generating DSP z_35, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex3_3D_reg[2] is absorbed into DSP z_35.
+DSP Report: operator z_35 is absorbed into DSP z_35.
+DSP Report: operator z_35 is absorbed into DSP z_35.
+DSP Report: Generating DSP z_17, operation Mode is: (-A)*(B:0x64).
+DSP Report: operator z_17 is absorbed into DSP z_17.
+DSP Report: Generating DSP z_36, operation Mode is: A*B2.
+DSP Report: register z_36 is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: Generating DSP z_36, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex3_3D_reg[0] is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: operator z_36 is absorbed into DSP z_36.
+DSP Report: Generating DSP z_26, operation Mode is: A2*B.
+DSP Report: register z_26 is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: Generating DSP z_26, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex2_3D_reg[1] is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: Generating DSP z_26, operation Mode is: A*B2.
+DSP Report: register z_26 is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: Generating DSP z_26, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex2_3D_reg[1] is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: Generating DSP z_25, operation Mode is: A2*B.
+DSP Report: register z_25 is absorbed into DSP z_25.
+DSP Report: operator z_25 is absorbed into DSP z_25.
+DSP Report: operator z_25 is absorbed into DSP z_25.
+DSP Report: Generating DSP z_25, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex2_3D_reg[2] is absorbed into DSP z_25.
+DSP Report: operator z_25 is absorbed into DSP z_25.
+DSP Report: operator z_25 is absorbed into DSP z_25.
+DSP Report: Generating DSP z_25, operation Mode is: A*B2.
+DSP Report: register z_25 is absorbed into DSP z_25.
+DSP Report: operator z_25 is absorbed into DSP z_25.
+DSP Report: operator z_25 is absorbed into DSP z_25.
+DSP Report: Generating DSP z_25, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex2_3D_reg[2] is absorbed into DSP z_25.
+DSP Report: operator z_25 is absorbed into DSP z_25.
+DSP Report: operator z_25 is absorbed into DSP z_25.
+DSP Report: Generating DSP z_26, operation Mode is: A*B2.
+DSP Report: register z_26 is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: Generating DSP z_26, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex2_3D_reg[0] is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: operator z_26 is absorbed into DSP z_26.
+DSP Report: Generating DSP z_16, operation Mode is: A2*B.
+DSP Report: register z_16 is absorbed into DSP z_16.
+DSP Report: operator z_16 is absorbed into DSP z_16.
+DSP Report: operator z_16 is absorbed into DSP z_16.
+DSP Report: Generating DSP z_16, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex1_3D_reg[1] is absorbed into DSP z_16.
+DSP Report: operator z_16 is absorbed into DSP z_16.
+DSP Report: operator z_16 is absorbed into DSP z_16.
+DSP Report: Generating DSP z_16, operation Mode is: A*B2.
+DSP Report: register z_16 is absorbed into DSP z_16.
+DSP Report: operator z_16 is absorbed into DSP z_16.
+DSP Report: operator z_16 is absorbed into DSP z_16.
+DSP Report: Generating DSP z_16, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex1_3D_reg[1] is absorbed into DSP z_16.
+DSP Report: operator z_16 is absorbed into DSP z_16.
+DSP Report: operator z_16 is absorbed into DSP z_16.
+DSP Report: Generating DSP z_15, operation Mode is: A2*B.
+DSP Report: register z_15 is absorbed into DSP z_15.
+DSP Report: operator z_15 is absorbed into DSP z_15.
+DSP Report: operator z_15 is absorbed into DSP z_15.
+DSP Report: Generating DSP z_15, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register vertex1_3D_reg[2] is absorbed into DSP z_15.
+DSP Report: operator z_15 is absorbed into DSP z_15.
+DSP Report: operator z_15 is absorbed into DSP z_15.
+DSP Report: Generating DSP z_15, operation Mode is: A*B2.
+DSP Report: register z_15 is absorbed into DSP z_15.
+DSP Report: operator z_15 is absorbed into DSP z_15.
+DSP Report: operator z_15 is absorbed into DSP z_15.
+DSP Report: Generating DSP z_15, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register vertex1_3D_reg[2] is absorbed into DSP z_15.
+DSP Report: operator z_15 is absorbed into DSP z_15.
+DSP Report: operator z_15 is absorbed into DSP z_15.
+DSP Report: Generating DSP z_16, operation Mode is: A*B2.
+DSP Report: register vertex1_3D_reg[0] is absorbed into DSP z_16.
+DSP Report: operator z_16 is absorbed into DSP z_16.
+DSP Report: Generating DSP inst/Frame_BufferCreate/count0, operation Mode is: C+A*(B:0x1b8).
+DSP Report: operator inst/Frame_BufferCreate/count0 is absorbed into DSP inst/Frame_BufferCreate/count0.
+DSP Report: operator inst/Frame_BufferCreate/count1 is absorbed into DSP inst/Frame_BufferCreate/count0.
+DSP Report: Generating DSP inst/Frame_buffer/mem_addrb0, operation Mode is: C+A*(B:0x1b8).
+DSP Report: operator inst/Frame_buffer/mem_addrb0 is absorbed into DSP inst/Frame_buffer/mem_addrb0.
+DSP Report: operator inst/Frame_buffer/mem_addrb1 is absorbed into DSP inst/Frame_buffer/mem_addrb0.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/triangle/z_start_reg__1/Q' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/triangle/scanline_done_reg__0/Q' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:236]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:236]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/triangle/triangle_calculations_start_reg/Q' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:158]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:158]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:158]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/triangle/trig_start_reg__0/Q' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:99]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:99]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:99]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/triangle/calculations_done_reg__1/Q' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:111]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:111]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.gen/sources_1/bd/block_design/ipshared/a4fc/src/triangle_pipeline.sv:111]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:55 ; elapsed = 00:04:58 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 200, Available = 120. Use report_utilization command for details.
+DSP Debug: swapped A/B pins for adder 0000024F0FA67AA0
+DSP Debug: swapped A/B pins for adder 0000024F05787150
+DSP Debug: swapped A/B pins for adder 0000024F0878D3F0
+DSP Debug: swapped A/B pins for adder 0000024F7BC863C0
+DSP Report: Generating DSP intermediate60, operation Mode is (post resource management): A*B.
+DSP Report: operator intermediate60 is absorbed into DSP intermediate60.
+DSP Report: operator intermediate60 is absorbed into DSP intermediate60.
+DSP Report: Generating DSP intermediate60, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator intermediate60 is absorbed into DSP intermediate60.
+DSP Report: operator intermediate60 is absorbed into DSP intermediate60.
+DSP Report: Generating DSP intermediate40, operation Mode is (post resource management): A*B.
+DSP Report: operator intermediate40 is absorbed into DSP intermediate40.
+DSP Report: operator intermediate40 is absorbed into DSP intermediate40.
+DSP Report: Generating DSP intermediate40, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator intermediate40 is absorbed into DSP intermediate40.
+DSP Report: operator intermediate40 is absorbed into DSP intermediate40.
+DSP Report: Generating DSP intermediate20, operation Mode is (post resource management): A*B.
+DSP Report: operator intermediate20 is absorbed into DSP intermediate20.
+DSP Report: operator intermediate20 is absorbed into DSP intermediate20.
+DSP Report: Generating DSP intermediate20, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator intermediate20 is absorbed into DSP intermediate20.
+DSP Report: operator intermediate20 is absorbed into DSP intermediate20.
+DSP Report: Generating DSP intermediate50, operation Mode is (post resource management): A*B.
+DSP Report: operator intermediate50 is absorbed into DSP intermediate50.
+DSP Report: operator intermediate50 is absorbed into DSP intermediate50.
+DSP Report: Generating DSP intermediate50, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator intermediate50 is absorbed into DSP intermediate50.
+DSP Report: operator intermediate50 is absorbed into DSP intermediate50.
+DSP Report: Generating DSP intermediate30, operation Mode is (post resource management): A*B.
+DSP Report: operator intermediate30 is absorbed into DSP intermediate30.
+DSP Report: operator intermediate30 is absorbed into DSP intermediate30.
+DSP Report: Generating DSP intermediate30, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator intermediate30 is absorbed into DSP intermediate30.
+DSP Report: operator intermediate30 is absorbed into DSP intermediate30.
+DSP Report: Generating DSP intermediate10, operation Mode is (post resource management): A*B.
+DSP Report: operator intermediate10 is absorbed into DSP intermediate10.
+DSP Report: operator intermediate10 is absorbed into DSP intermediate10.
+DSP Report: Generating DSP intermediate10, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator intermediate10 is absorbed into DSP intermediate10.
+DSP Report: operator intermediate10 is absorbed into DSP intermediate10.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red6, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: operator red6 is absorbed into DSP red6.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP red4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: operator red4 is absorbed into DSP red4.
+DSP Report: Generating DSP green3, operation Mode is (post resource management): A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is (post resource management): A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is (post resource management): A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: Generating DSP green3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator green3 is absorbed into DSP green3.
+DSP Report: operator green3 is absorbed into DSP green3.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|triangle_pipeline | A*B             | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*(B:0x64)      | 18     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 16     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 16     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 12     | 10     | -      | -      | 22     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A:B+C      | 28     | 18     | 46     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 16     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 10     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 10     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*(B:0x64)      | 18     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 16     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 10     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 10     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 16     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 12     | 10     | -      | -      | 22     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 10     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 10     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A:B+C      | 28     | 18     | 46     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 16     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 13     | 13     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 13     | 13     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 13     | 13     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 13     | 13     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 13     | 13     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 13     | 13     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B        | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B  | 18     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*(B:0x64)      | 18     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B             | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*(B:0x64)      | 18     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (-A)*(B:0x64)   | 16     | 8      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 25     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 25     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 25     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 25     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A2*B            | 18     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A2*B | 15     | 9      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | (PCIN>>17)+A*B2 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B2            | 25     | 10     | -      | -      | 35     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|ColorPicker       | C+A*(B:0x1b8)   | 10     | 9      | 10     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|ColorMapper       | C+A*(B:0x1b8)   | 10     | 9      | 10     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:54 ; elapsed = 00:05:58 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:07:10 ; elapsed = 00:07:14 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:07:36 ; elapsed = 00:07:40 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:08:02 ; elapsed = 00:08:06 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:08:02 ; elapsed = 00:08:06 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:09 ; elapsed = 00:08:13 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:08:09 ; elapsed = 00:08:13 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:08:09 ; elapsed = 00:08:13 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:08:09 ; elapsed = 00:08:13 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name                                                                                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|hdmi_tx_0          | inst/encg/c0_reg_reg                                                                                                   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|blk_mem_gen_v8_4_5 | inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[4] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-------------------+------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|triangle_pipeline | A*B          | 17     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 0      | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 0      | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 0      | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 0      | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 0      | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 0      | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 0      | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 0      | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 0      | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 0      | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 0      | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 0      | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B     | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 30     | 18     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B     | 13     | 13     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B     | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 17     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B     | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 30     | 18     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B     | 13     | 13     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B     | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 17     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 13     | 13     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B     | 30     | 18     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B     | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 30     | 18     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B     | 13     | 13     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN+A*B     | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_pipeline | PCIN>>17+A*B | 17     | 17     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     5|
+|2     |CARRY4     |   830|
+|3     |DSP48E1    |    62|
+|4     |LUT1       |    52|
+|5     |LUT2       |  1723|
+|6     |LUT3       |   362|
+|7     |LUT4       |   550|
+|8     |LUT5       |   202|
+|9     |LUT6       |   676|
+|10    |MMCME2_ADV |     1|
+|11    |OSERDESE2  |     8|
+|13    |RAMB36E1   |    36|
+|14    |SRL16E     |    40|
+|15    |FDCE       |    80|
+|16    |FDRE       |   223|
+|17    |FDSE       |     1|
+|18    |IBUF       |     1|
+|19    |OBUFDS     |     4|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:08:09 ; elapsed = 00:08:13 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 15 critical warnings and 663 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:00 ; elapsed = 00:07:53 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+Synthesis Optimization Complete : Time (s): cpu = 00:08:10 ; elapsed = 00:08:14 . Memory (MB): peak = 1789.938 ; gain = 1004.242
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.623 . Memory (MB): peak = 1789.938 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 933 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1789.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a5d32f71
+INFO: [Common 17-83] Releasing license: Synthesis
+108 Infos, 136 Warnings, 27 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:08:32 ; elapsed = 00:08:38 . Memory (MB): peak = 1789.938 ; gain = 1379.188
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.runs/block_design_hdmi_text_controller_0_0_synth_1/block_design_hdmi_text_controller_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1789.938 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1789.938 ; gain = 0.000
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 96 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Alyssa/Documents/ece385/ece385/final_project/final_project.runs/block_design_hdmi_text_controller_0_0_synth_1/block_design_hdmi_text_controller_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1789.938 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file block_design_hdmi_text_controller_0_0_utilization_synth.rpt -pb block_design_hdmi_text_controller_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1789.938 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 12:33:47 2023...

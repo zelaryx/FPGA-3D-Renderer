@@ -1,0 +1,268 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec  7 04:55:41 2023
+# Process ID: 3540
+# Current directory: C:/Users/shivg/Desktop/ece385/final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent40952 C:\Users\shivg\Desktop\ece385\final_project\final_project.xpr
+# Log file: C:/Users/shivg/Desktop/ece385/final_project/vivado.log
+# Journal file: C:/Users/shivg/Desktop/ece385/final_project\vivado.jou
+# Running On: LAPTOP-NU55RTUH, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16541 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/shivg/Desktop/ece385/final_project/final_project.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/shivg/Desktop/ece385/final_project/final_project.srcs/sources_1/bd/block_design/block_design.bd}
+ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v1_0_project -directory C:/Users/shivg/Desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property -dict [list \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Enable_B {Always_Enabled} \
+  CONFIG.Register_PortB_Output_of_Memory_Primitives {false} \
+  CONFIG.Use_RSTA_Pin {false} \
+  CONFIG.Write_Depth_A {36300} \
+  CONFIG.Write_Width_A {64} \
+] [get_ips blk_mem_gen_0]
+generate_target all [get_files  c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
+export_ip_user_files -of_objects [get_files c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -directory c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list \
+  CONFIG.C_BLUE_WIDTH {2} \
+  CONFIG.C_GREEN_WIDTH {3} \
+  CONFIG.C_RED_WIDTH {3} \
+] [get_ips hdmi_tx_0]
+generate_target all [get_files  c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0/hdmi_tx_0.xci]
+export_ip_user_files -of_objects [get_files c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0/hdmi_tx_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0/hdmi_tx_0.xci] -directory c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_AXI.sv] -no_script -reset -force -quiet
+remove_files  {c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_AXI.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src {C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorPicker.sv C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_AXI.sv C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorMapper.sv}
+add_files -norecurse -copy_to c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src {C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorPicker.sv C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorMapper.sv}
+add_files -norecurse C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorPicker.sv
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorMapper.sv
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src {C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_AXI.sv}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top hdmi_text_controller_v1_0 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+set_property CONFIG.Assume_Synchronous_Clk {true} [get_ips blk_mem_gen_0]
+generate_target all [get_files  c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
+export_ip_user_files -of_objects [get_files c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -directory c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list \
+  CONFIG.CLKOUT3_JITTER {130.958} \
+  CONFIG.CLKOUT3_PHASE_ERROR {98.575} \
+  CONFIG.CLKOUT3_USED {true} \
+  CONFIG.MMCM_CLKOUT2_DIVIDE {10} \
+  CONFIG.NUM_OUT_CLKS {3} \
+] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0/clk_wiz_0.xci]
+export_ip_user_files -of_objects [get_files c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0/clk_wiz_0.xci] -directory c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/shivg/desktop/ece385/final_project/final_project.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_project final_project
+set_property location {-19 74} [get_bd_ports clk_100MHz]
+delete_bd_objs [get_bd_intf_nets microblaze_0_interrupt] [get_bd_intf_nets microblaze_0_dlmb_1] [get_bd_intf_nets microblaze_0_ilmb_1] [get_bd_intf_nets microblaze_0_axi_dp] [get_bd_intf_nets microblaze_0_debug] [get_bd_cells microblaze_0]
+delete_bd_objs [get_bd_nets clk_100MHz_1] [get_bd_nets clk_wiz_1_locked] [get_bd_cells clk_wiz_1]
+delete_bd_objs [get_bd_nets rst_clk_wiz_1_100M_bus_struct_reset] [get_bd_cells microblaze_0_local_memory]
+delete_bd_objs [get_bd_nets reset_rtl_0_1] [get_bd_nets mdm_1_debug_sys_rst] [get_bd_nets rst_clk_wiz_1_100M_mb_reset] [get_bd_cells rst_clk_wiz_1_100M]
+delete_bd_objs [get_bd_intf_nets microblaze_0_intc_axi] [get_bd_intf_nets microblaze_0_axi_periph_M01_AXI] [get_bd_intf_nets microblaze_0_axi_periph_M02_AXI] [get_bd_cells microblaze_0_axi_periph]
+delete_bd_objs [get_bd_cells mdm_1]
+delete_bd_objs [get_bd_nets axi_uartlite_0_interrupt] [get_bd_cells microblaze_0_axi_intc]
+delete_bd_objs [get_bd_intf_nets axi_uartlite_0_UART] [get_bd_nets microblaze_0_Clk] [get_bd_nets rst_clk_wiz_1_100M_peripheral_aresetn] [get_bd_cells axi_uartlite_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.2 mig_7series_0
+endgroup
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:hdmi_text_controller:1.0 [get_ips  block_design_hdmi_text_controller_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips block_design_hdmi_text_controller_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/shivg/Desktop/ece385/final_project/final_project.srcs/sources_1/bd/block_design/block_design.bd]
+set_property location {2 406 155} [get_bd_cells mig_7series_0]
+set_property CONFIG.XML_INPUT_FILE {mig_a.prj} [get_bd_cells mig_7series_0]
+set_property CONFIG.RESET_BOARD_INTERFACE {Custom} [get_bd_cells mig_7series_0]
+set_property CONFIG.MIG_DONT_TOUCH_PARAM {Custom} [get_bd_cells mig_7series_0]
+set_property CONFIG.BOARD_MIG_PARAM {Custom} [get_bd_cells mig_7series_0]
+set_property location {1 560 -148} [get_bd_cells microblaze_0]
+set_property -dict [list \
+  CONFIG.C_D_LMB {0} \
+  CONFIG.C_I_LMB {0} \
+  CONFIG.C_USE_DCACHE {1} \
+  CONFIG.C_USE_ICACHE {1} \
+] [get_bd_cells microblaze_0]
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {1} axi_periph {Enabled} cache {None} clk {/mig_7series_0/ui_clk (83 MHz)} cores {1} debug_module {Debug Only} ecc {None} local_mem {None} preset {Microcontroller}}  [get_bd_cells microblaze_0]
+delete_bd_objs [get_bd_intf_ports uart_rtl_0]
+delete_bd_objs [get_bd_nets microblaze_0_intr] [get_bd_cells microblaze_0_xlconcat]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+endgroup
+set_property location {6 1748 203} [get_bd_cells axi_uartlite_0]
+connect_bd_net [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins microblaze_0_axi_intc/intr]
+connect_bd_net [get_bd_pins mig_7series_0/ui_addn_clk_0] [get_bd_pins mig_7series_0/clk_ref_i]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/hdmi_text_controller_0/AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins hdmi_text_controller_0/AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {/mig_7series_0/ui_clk (83 MHz)} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0 (Periph)} Slave {/mig_7series_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins mig_7series_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_pins mig_7series_0/sys_rst]
+endgroup
+delete_bd_objs [get_bd_nets rst_mig_7series_0_83M_interconnect_aresetn]
+set_property location {-33 190} [get_bd_ports reset_rtl_0]
+connect_bd_net [get_bd_ports reset_rtl_0] [get_bd_pins mig_7series_0/sys_rst]
+set_property location {-13 203} [get_bd_ports reset_rtl_0]
+set_property location {-9 168} [get_bd_ports reset_rtl_0]
+set_property location {-15 326} [get_bd_ports clk_100MHz]
+startgroup
+make_bd_pins_external  [get_bd_cells mig_7series_0]
+make_bd_intf_pins_external  [get_bd_cells mig_7series_0]
+endgroup
+save_bd_design
+set_property name SYS_CLK [get_bd_intf_ports SYS_CLK_0]
+set_property name ddr3 [get_bd_intf_ports DDR3_0]
+assign_bd_address
+validate_bd_design
+startgroup
+set_property -dict [list \
+  CONFIG.C_USE_DCACHE {1} \
+  CONFIG.C_USE_ICACHE {1} \
+] [get_bd_cells microblaze_0]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {/mig_7series_0/ui_clk (83 MHz)} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0/M_AXI_DC} Slave {/mig_7series_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins microblaze_0/M_AXI_DC]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {/mig_7series_0/ui_clk (83 MHz)} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_0/M_AXI_IC} Slave {/mig_7series_0/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins microblaze_0/M_AXI_IC]
+endgroup
+startgroup
+set_property CONFIG.C_BAUDRATE {115200} [get_bd_cells axi_uartlite_0]
+endgroup
+set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Data/SEG_mig_7series_0_memaddr}]
+set_property offset 0x00000000 [get_bd_addr_segs {microblaze_0/Instruction/SEG_mig_7series_0_memaddr}]
+save_bd_design
+validate_bd_design
+report_ip_status -name ip_status 
+save_bd_design
+set_property location {5 1904 -195} [get_bd_cells hdmi_text_controller_0]
+set_property location {2 1189 -111} [get_bd_cells microblaze_0_axi_intc]
+set_property location {4 1938 -113} [get_bd_cells hdmi_text_controller_0]
+set_property location {1.5 950 -117} [get_bd_cells microblaze_0_axi_intc]
+set_property location {2 1008 139} [get_bd_cells rst_mig_7series_0_83M]
+set_property location {0.5 233 -153} [get_bd_cells mdm_1]
+set_property location {2 557 -170} [get_bd_cells microblaze_0]
+set_property location {1 234 -201} [get_bd_cells mdm_1]
+set_property location {1 213 -179} [get_bd_cells mdm_1]
+set_property location {1 213 -170} [get_bd_cells mdm_1]
+set_property location {2 504 -3} [get_bd_cells mig_7series_0]
+set_property location {3 1174 -180} [get_bd_cells microblaze_0_axi_intc]
+set_property location {3 1171 -145} [get_bd_cells microblaze_0_axi_intc]
+current_project hdmi_text_controller_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_files -from_files C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorPicker.sv -to_files C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorPicker.sv -filesets [get_filesets *]
+export_ip_user_files -of_objects  [get_files C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorPicker.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorPicker.sv
+add_files -norecurse -copy_to c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorPicker.sv
+add_files -norecurse -copy_to c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src C:/Users/shivg/Downloads/ece385-azh4/ip_repo/hdmi_text_controller_1_0/src/ColorPicker.sv
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 8 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project final_project
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project hdmi_text_controller_v1_0_project
+current_project final_project
+upgrade_ip -vlnv xilinx.com:user:hdmi_text_controller:1.0 [get_ips  block_design_hdmi_text_controller_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips block_design_hdmi_text_controller_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/shivg/Desktop/ece385/final_project/final_project.srcs/sources_1/bd/block_design/block_design.bd]
+connect_bd_net [get_bd_ports clk_100MHz] [get_bd_pins hdmi_text_controller_0/logic_clk]
+connect_bd_net [get_bd_ports reset_rtl_0] [get_bd_pins hdmi_text_controller_0/raw_reset]
+set_property location {-76 -453} [get_bd_ports clk_100MHz]
+set_property location {5.5 2258 -134} [get_bd_cells hdmi_text_controller_0]
+set_property location {2421 -126} [get_bd_intf_ports HDMI_0]
+set_property location {2416 -270} [get_bd_intf_ports ddr3]
+set_property location {2408 -319} [get_bd_intf_ports ddr3]
+set_property location {6 2210 186} [get_bd_cells axi_uartlite_0]
+delete_bd_objs [get_bd_nets mig_7series_0_init_calib_complete] [get_bd_ports init_calib_complete_0]
+validate_bd_design
+report_ip_status -name ip_status 
+save_bd_design
+current_project hdmi_text_controller_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 9 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/shivg/Desktop/ece385/final_project/ip_repo/hdmi_text_controller_1_0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:hdmi_text_controller:1.0 [get_ips  block_design_hdmi_text_controller_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips block_design_hdmi_text_controller_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/shivg/Desktop/ece385/final_project/final_project.srcs/sources_1/bd/block_design/block_design.bd]
+catch { config_ip_cache -export [get_ips -all block_design_hdmi_text_controller_0_0] }
+catch { config_ip_cache -export [get_ips -all block_design_microblaze_0_1] }
+catch { config_ip_cache -export [get_ips -all block_design_xbar_1] }
+catch { config_ip_cache -export [get_ips -all block_design_microblaze_0_axi_intc_1] }
+catch { config_ip_cache -export [get_ips -all block_design_mdm_1_1] }
+catch { config_ip_cache -export [get_ips -all block_design_rst_mig_7series_0_83M_0] }
+catch { config_ip_cache -export [get_ips -all block_design_axi_uartlite_0_1] }
+catch { config_ip_cache -export [get_ips -all block_design_auto_pc_3] }
+catch { config_ip_cache -export [get_ips -all block_design_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all block_design_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all block_design_auto_pc_2] }
+export_ip_user_files -of_objects [get_files C:/Users/shivg/Desktop/ece385/final_project/final_project.srcs/sources_1/bd/block_design/block_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/shivg/Desktop/ece385/final_project/final_project.srcs/sources_1/bd/block_design/block_design.bd]
+launch_runs block_design_hdmi_text_controller_0_0_synth_1 block_design_microblaze_0_1_synth_1 block_design_mig_7series_0_0_synth_1 block_design_xbar_1_synth_1 block_design_microblaze_0_axi_intc_1_synth_1 block_design_rst_mig_7series_0_83M_0_synth_1 block_design_axi_uartlite_0_1_synth_1 block_design_auto_pc_3_synth_1 block_design_auto_pc_0_synth_1 block_design_auto_pc_1_synth_1 block_design_auto_pc_2_synth_1 -jobs 8
+wait_on_run block_design_hdmi_text_controller_0_0_synth_1
+wait_on_run block_design_microblaze_0_1_synth_1
+wait_on_run block_design_mig_7series_0_0_synth_1
+wait_on_run block_design_xbar_1_synth_1
+wait_on_run block_design_microblaze_0_axi_intc_1_synth_1
+wait_on_run block_design_rst_mig_7series_0_83M_0_synth_1
+wait_on_run block_design_axi_uartlite_0_1_synth_1
+wait_on_run block_design_auto_pc_3_synth_1
+wait_on_run block_design_auto_pc_0_synth_1
+wait_on_run block_design_auto_pc_1_synth_1
+wait_on_run block_design_auto_pc_2_synth_1
+export_simulation -of_objects [get_files C:/Users/shivg/Desktop/ece385/final_project/final_project.srcs/sources_1/bd/block_design/block_design.bd] -directory C:/Users/shivg/Desktop/ece385/final_project/final_project.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/shivg/Desktop/ece385/final_project/final_project.ip_user_files -ipstatic_source_dir C:/Users/shivg/Desktop/ece385/final_project/final_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/shivg/Desktop/ece385/final_project/final_project.cache/compile_simlib/modelsim} {questa=C:/Users/shivg/Desktop/ece385/final_project/final_project.cache/compile_simlib/questa} {riviera=C:/Users/shivg/Desktop/ece385/final_project/final_project.cache/compile_simlib/riviera} {activehdl=C:/Users/shivg/Desktop/ece385/final_project/final_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/shivg/Downloads/urbana_ddr3.xdc
+import_files -fileset constrs_1 C:/Users/shivg/Downloads/urbana_ddr3.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {C:/Users/shivg/Desktop/ece385/final_project/final_project.srcs/sources_1/bd/block_design/block_design.bd}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {C:/Users/shivg/Desktop/ece385/final_project/final_project.srcs/sources_1/bd/block_design/block_design.bd}
+write_hw_platform -fixed -include_bit -force -file C:/Users/shivg/Desktop/ece385/final_project/top_level.xsa

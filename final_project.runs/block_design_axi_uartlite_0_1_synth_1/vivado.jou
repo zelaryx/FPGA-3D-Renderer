@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec  7 05:38:16 2023
+# Process ID: 48760
+# Current directory: C:/Users/shivg/Desktop/ece385/final_project/final_project.runs/block_design_axi_uartlite_0_1_synth_1
+# Command line: vivado.exe -log block_design_axi_uartlite_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_design_axi_uartlite_0_1.tcl
+# Log file: C:/Users/shivg/Desktop/ece385/final_project/final_project.runs/block_design_axi_uartlite_0_1_synth_1/block_design_axi_uartlite_0_1.vds
+# Journal file: C:/Users/shivg/Desktop/ece385/final_project/final_project.runs/block_design_axi_uartlite_0_1_synth_1\vivado.jou
+# Running On: LAPTOP-NU55RTUH, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16541 MB
+#-----------------------------------------------------------
+source block_design_axi_uartlite_0_1.tcl -notrace

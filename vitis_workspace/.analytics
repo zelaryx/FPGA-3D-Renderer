@@ -1,0 +1,17 @@
+timestamp=[2023-11-28 03:36:57], mode=WORKBENCH_START, duration=0:00:06.019, duration_ms=6019, data={}
+timestamp=[2023-11-28 03:36:57], mode=WORKBENCH_UI_INIT, duration=0:00:00.441, duration_ms=441, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-11-28 03:36:57], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.052, duration_ms=52, data={}
+timestamp=[2023-11-28 03:39:35], mode=APP_CREATION, duration=0:00:04.516, duration_ms=4516, data={name=final_project_software, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=top_level, application_type=application}
+timestamp=[2023-11-28 03:44:18], mode=PLATFORM_GENERATION, duration=0:00:02.512, duration_ms=2512, data={name=top_level}
+timestamp=[2023-11-28 03:44:31], mode=PLATFORM_GENERATION, duration=0:00:03.865, duration_ms=3865, data={name=top_level}
+timestamp=[2023-11-28 03:44:31], mode=BUILD, duration=0:00:00.506, duration_ms=506, data={name=final_project_software, configuration=Debug, clean_build=false}
+timestamp=[2023-11-28 03:45:53], mode=BUILD, duration=0:00:01.118, duration_ms=1118, data={name=final_project_software, configuration=Debug, clean_build=false}
+timestamp=[2023-11-28 04:29:13], mode=BUILD, duration=0:00:00.214, duration_ms=214, data={name=final_project_software, configuration=Debug, clean_build=true}
+timestamp=[2023-11-28 04:29:15], mode=PLATFORM_GENERATION, duration=0:00:02.492, duration_ms=2492, data={name=top_level}
+timestamp=[2023-11-28 04:29:20], mode=PLATFORM_GENERATION, duration=0:00:04.604, duration_ms=4604, data={name=top_level}
+timestamp=[2023-11-28 04:29:21], mode=BUILD, duration=0:00:01.054, duration_ms=1054, data={name=final_project_software, configuration=Debug, clean_build=false}
+timestamp=[2023-11-28 04:29:22], mode=BUILD, duration=0:00:00.114, duration_ms=114, data={name=final_project_software_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-07 05:50:05], mode=WORKBENCH_START, duration=0:00:11.775, duration_ms=11775, data={}
+timestamp=[2023-12-07 05:50:05], mode=WORKBENCH_UI_INIT, duration=0:00:00.476, duration_ms=476, data={editors_count=5, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,final_project_software,final_project_software_system,top_level}
+timestamp=[2023-12-07 05:50:06], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.043, duration_ms=43, data={}
+timestamp=[2023-12-07 05:52:28], mode=APP_CREATION, duration=0:00:04.304, duration_ms=4304, data={name=Final_Proj, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=top_level_1, application_type=application}

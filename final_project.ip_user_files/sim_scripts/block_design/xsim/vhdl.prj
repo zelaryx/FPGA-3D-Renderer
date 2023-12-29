@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/block_design/ip/block_design_microblaze_0_1/sim/block_design_microblaze_0_1.vhd" \
+"../../../bd/block_design/ip/block_design_microblaze_0_axi_intc_1/sim/block_design_microblaze_0_axi_intc_1.vhd" \
+"../../../bd/block_design/ip/block_design_mdm_1_1/sim/block_design_mdm_1_1.vhd" \
+"../../../bd/block_design/ip/block_design_rst_mig_7series_0_83M_0/sim/block_design_rst_mig_7series_0_83M_0.vhd" \
+"../../../bd/block_design/ip/block_design_axi_uartlite_0_1/sim/block_design_axi_uartlite_0_1.vhd" \
+
+nosort

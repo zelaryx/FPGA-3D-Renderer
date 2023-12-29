@@ -1,0 +1,59 @@
+05:53:25 DEBUG : Logs will be stored at 'C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/IDE.log'.
+05:53:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\shivg\Desktop\ece385\final_project\vitis_workspace\Final_Proj_workspace\temp_xsdb_launch_script.tcl
+05:53:27 INFO  : Platform repository initialization has completed.
+05:53:27 INFO  : Registering command handlers for Vitis TCF services
+05:53:29 INFO  : XSCT server has started successfully.
+05:53:29 INFO  : Successfully done setting XSCT server connection channel  
+05:53:29 INFO  : plnx-install-location is set to ''
+05:53:29 INFO  : Successfully done query RDI_DATADIR 
+05:53:29 INFO  : Successfully done setting workspace for the tool. 
+05:53:57 ERROR : (XSDB Server)ERROR: [Hsi 55-1562] Source directory C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/hw/drivers\hdmi_text_controller_v1_0/src does not exist or is not a directory.
+
+05:53:58 INFO  : Result from executing command 'getProjects': top_level
+05:53:58 INFO  : Result from executing command 'getPlatforms': 
+05:53:59 WARN  : An unexpected exception occurred in the module 'platform project logging'
+05:53:59 INFO  : Platform 'top_level' is added to custom repositories.
+05:54:01 INFO  : Platform 'top_level' is added to custom repositories.
+05:54:17 INFO  : Hardware specification for platform project 'top_level' is updated.
+05:55:16 INFO  : Successfully generated C:\Users\shivg\Desktop\ece385\final_project\vitis_workspace\Final_Proj_workspace\Final_Proj\src\lscript.ld.
+05:55:16 INFO  : Applying linker script to all configurations of project Final_Proj.
+05:55:16 INFO  : Setting rebuild state to true for all configurations of project Final_Proj.
+05:55:25 INFO  : Result from executing command 'removePlatformRepo': 
+05:55:47 INFO  : Result from executing command 'getProjects': top_level
+05:55:47 INFO  : Result from executing command 'getPlatforms': 
+05:55:47 INFO  : Checking for BSP changes to sync application flags for project 'Final_Proj'...
+05:56:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:56:38 INFO  : Jtag cable 'RealDigital Boo 8874292302AEA' is selected.
+05:56:38 INFO  : 'jtag frequency' command is executed.
+05:56:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+05:56:40 INFO  : Device configured successfully with "C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/_ide/bitstream/top_level.bit"
+05:56:40 INFO  : Context for processor 'microblaze_0' is selected.
+05:56:40 INFO  : Hardware design and registers information is loaded from 'C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa'.
+05:56:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:56:40 INFO  : Context for processor 'microblaze_0' is selected.
+05:56:40 INFO  : System reset is completed.
+05:56:43 INFO  : 'after 3000' command is executed.
+05:56:43 INFO  : Context for processor 'microblaze_0' is selected.
+05:56:43 INFO  : The application 'C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/Debug/Final_Proj.elf' is downloaded to processor 'microblaze_0'.
+05:56:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 8874292302AEA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/_ide/bitstream/top_level.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/hw/top_level.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/Final_Proj/Debug/Final_Proj.elf
+----------------End of Script----------------
+
+05:56:43 INFO  : Context for processor 'microblaze_0' is selected.
+05:56:43 INFO  : 'con' command is executed.
+05:56:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:56:43 INFO  : Disconnected from the channel tcfchan#3.

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Dec 11 02:02:32 2023
+# Process ID: 38316
+# Current directory: C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16660 C:\Users\Alyssa\Documents\ece385\ece385\final_project\ip_repo\edit_hdmi_text_controller_v1_0.xpr
+# Log file: C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/vivado.log
+# Journal file: C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo\vivado.jou
+# Running On: DESKTOP-4F755MS, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 8, Host memory: 34248 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/edit_hdmi_text_controller_v1_0.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller.h C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/sine_table_64x16.mem}
+add_files -norecurse {C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/triangle_pipeline.sv C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/rom_async.sv C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/trig.sv C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/sine_table.sv C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/ColorPicker.sv C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/ColorMapper.sv C:/Users/Alyssa/Documents/ece385/ece385/final_project/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_AXI.sv}
+update_compile_order -fileset sources_1

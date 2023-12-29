@@ -1,0 +1,26 @@
+05:55:47 **** Build of configuration Debug for project Final_Proj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/sw/top_level/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/sw/top_level/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Final_Proj.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/shivg/Desktop/ece385/final_project/vitis_workspace/Final_Proj_workspace/top_level/export/top_level/sw/top_level/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Final_Proj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Final_Proj.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Final_Proj.elf  |tee "Final_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2300	    316	2097192	2099808	 200a60	Final_Proj.elf
+'Finished building: Final_Proj.elf.size'
+' '
+
+05:55:49 Build Finished (took 1s.628ms)
+

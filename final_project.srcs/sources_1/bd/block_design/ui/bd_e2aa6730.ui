@@ -1,0 +1,53 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.94768",
+   "Default View_TopLeft":"1631,-411",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port HDMI_0 -pg 1 -lvl 6 -x 2400 -y -130 -defaultsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 6 -x 2400 -y 180 -defaultsOSRD
+preplace port ddr3 -pg 1 -lvl 6 -x 2400 -y -320 -defaultsOSRD
+preplace port SYS_CLK -pg 1 -lvl 0 -x 0 -y -30 -defaultsOSRD
+preplace port port-id_clk_100MHz -pg 1 -lvl 0 -x 0 -y -450 -defaultsOSRD
+preplace port port-id_reset_rtl_0 -pg 1 -lvl 0 -x 0 -y 0 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 2 -x 650 -y -180 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 2 -x 650 -y 0 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 4 -x 1620 -y -30 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -x 1170 -y -140 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 1 -x 220 -y -170 -defaultsOSRD
+preplace inst rst_mig_7series_0_83M -pg 1 -lvl 3 -x 1170 -y 140 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 5 -x 2260 -y 190 -defaultsOSRD
+preplace inst hdmi_text_controller_0 -pg 1 -lvl 5 -x 2260 -y -130 -defaultsOSRD
+preplace netloc axi_uartlite_0_interrupt 1 2 4 980 -290 1360 -300 N -300 2370
+preplace netloc clk_100MHz_1 1 0 5 NJ -450 NJ -450 NJ -450 NJ -450 1830
+preplace netloc mdm_1_debug_sys_rst 1 1 2 350 -280 900J
+preplace netloc microblaze_0_Clk 1 1 4 400 -320 930 -270 1360 -280 1790
+preplace netloc mig_7series_0_mmcm_locked 1 2 1 880 30n
+preplace netloc mig_7series_0_ui_addn_clk_0 1 1 2 380 -310 880
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 2 1 890 -30n
+preplace netloc reset_rtl_0_1 1 0 5 N 0 340 -340 N -340 N -340 1820
+preplace netloc rst_mig_7series_0_83M_mb_reset 1 1 3 410 -270 910 30 1340
+preplace netloc rst_mig_7series_0_83M_peripheral_aresetn 1 1 4 390 -300 940 -250 1380 -290 1800J
+preplace netloc SYS_CLK_0_1 1 0 2 N -30 330
+preplace netloc axi_uartlite_0_UART 1 5 1 N 180
+preplace netloc hdmi_text_controller_0_HDMI 1 5 1 N -130
+preplace netloc microblaze_0_M_AXI_DC 1 2 2 970 -30 1350
+preplace netloc microblaze_0_M_AXI_IC 1 2 2 920 -20 1390
+preplace netloc microblaze_0_axi_dp 1 2 2 950 -10 1370
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 1 1780 -40n
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 4 1 1810 -170n
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 1 4 370 -330 NJ -330 N -330 1770
+preplace netloc microblaze_0_debug 1 1 1 360 -190n
+preplace netloc microblaze_0_intc_axi 1 2 3 990 -260 1370 -270 1760
+preplace netloc microblaze_0_interrupt 1 1 3 420 -290 970 -280 1340
+preplace netloc mig_7series_0_DDR3 1 2 4 960J -300 1340 -320 NJ -320 N
+levelinfo -pg 1 0 220 650 1170 1620 2260 2400
+pagesize -pg 1 -db -bbox -sgen -130 -470 2510 550
+"
+}
+{
+   "da_axi4_cnt":"7",
+   "da_board_cnt":"6",
+   "da_mb_cnt":"2"
+}
